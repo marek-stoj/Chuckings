@@ -11,6 +11,11 @@ public class Intro : MonoBehaviour
 
   private void Start()
   {
+    if (!enabled)
+    {
+      return;
+    }
+
     _chuck.RunCode(@"
       SinOsc so => dac;
 
